@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bird : MonoBehaviour
+public class Bird : MonoBehaviour
 {
 
     public float upForce = 200.0f;
@@ -39,7 +39,7 @@ public class bird : MonoBehaviour
     {
         rb2d.velocity = Vector2.zero;
         isDead = true;
-        anim.SetTrigger("Dead");
+        anim.SetTrigger("Die");
         GameControl.instance.BirdDied(); 
     }
 }
